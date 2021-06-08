@@ -1,0 +1,24 @@
+schema: '2.0'
+stages:
+  clean:
+    cmd: python 01_clean_data.py
+    deps:
+    - path: 01_clean_data.py
+      md5: 41fe551efab1b5d0301a53d54212e872
+      size: 290
+    - path: data/abalone.data
+      md5: a769fd0119787cac09158fe08971e480
+      size: 191873
+    outs:
+    - path: data/abalone.csv
+      md5: 237f0de794cee83d1a6e2966021e3e7c
+      size: 236676
+  summary:
+    cmd: python 02_summary_stats.py
+    deps:
+    - path: 02_summary_stats.py
+      md5: b4f343e4177548c6a8f70fdc7d33163d
+      size: 215
+    - path: data/abalone.csv
+      md5: 237f0de794cee83d1a6e2966021e3e7c
+      size: 236676

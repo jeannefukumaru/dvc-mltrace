@@ -1,6 +1,6 @@
 import pandas as pd 
 
-raw = pd.read_csv('abalone.data', header=None)
+raw = pd.read_csv('data/abalone.data', header=None)
 
 print('adding column names')
 
