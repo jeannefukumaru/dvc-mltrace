@@ -4,7 +4,7 @@ stages:
     cmd: python 01_clean_data.py
     deps:
     - path: 01_clean_data.py
-      md5: 63a0e6adf9ec6f916e1fb8a5f6ec73af
+      md5: fe6022fc910de2087595cc6e736f6f9f
       size: 810
     - path: data/abalone.data
       md5: a769fd0119787cac09158fe08971e480
